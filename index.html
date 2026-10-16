@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalit Olami</title>
+    <link rel="icon"href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-m5qNRSa33JXpuRNJWH4U4bO64X41rlhmLozv7dSKgw&s=10">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="loader" id="loader">
+        <i class="fa-solid fa-key"></i>
+    </div>
+
+    <div class="progress" id="progress"></div>
+
+    <header class="header" id="header">
+        <a href="#hero" class="logo"><i class="fa-solid fa-key"></i> Kalit Olami</a>
+        <nav class="nav" id="nav">
+            <a href="#hero"><i class="fa-solid fa-house"></i> Bosh sahifa</a>
+            <a href="#haqida"><i class="fa-solid fa-circle-info"></i> Haqida</a>
+            <a href="#tarix"><i class="fa-solid fa-clock-rotate-left"></i> Tarix</a>
+            <a href="#galereya"><i class="fa-solid fa-images"></i> Galereya</a>
+            <a href="#turlar"><i class="fa-solid fa-layer-group"></i> Turlar</a>
+            <a href="#savollar"><i class="fa-solid fa-circle-question"></i> Savollar</a>
+            <a href="#aloqa"><i class="fa-solid fa-envelope"></i> Aloqa</a>
+        </nav>
+        <button class="menu-btn" id="menuBtn"><i class="fa-solid fa-bars"></i></button>
+    </header>
+
+    <section class="hero" id="hero">
+        <img src="https://images.openai.com/static-rsc-4/peBHdX5DC_RG6O9K6UyvLHG4uWnxKNDmPAKN8qmKyVyEd_CKp-2YWK_Fl_HXGBL0IW-p9bW5wHjox4evcLnBQoCNu8pHKWgwi-AfxOJlKNgbGyVQQCMEaCiXj4MUP1um1BpUi7yzNcvNH8iFFMQrNDGvmq9jQuuJ7d4v8-pC1o7uOJyFNh7HuJG5R7Tk63Hv?purpose=fullsize" alt="Kalit" class="hero-img" id="heroImg">
+        <div class="hero-overlay"></div>
+        <div class="particles" id="particles"></div>
+        <div class="hero-text">
+            <span class="badge fade-up"><i class="fa-solid fa-crown"></i> Eng sirli buyum</span>
+            <h1 class="fade-up delay" id="heroTitle">Oltin Kalit</h1>
+            <p class="fade-up delay" id="heroDesc">Har bir eshikning siri bitta kalitda yashiringan.</p>
+            <div class="hero-buttons fade-up delay2">
+                <button class="btn" id="changeImgBtn"><i class="fa-solid fa-image"></i> Rasmni almashtirish</button>
+                <button class="btn btn-outline" id="changeTextBtn"><i class="fa-solid fa-pen"></i> <span id="changeTextLabel">Matnni almashtirish</span></button>
+            </div>
+            <div class="dots" id="dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+        <a href="#haqida" class="scroll-down"><i class="fa-solid fa-chevron-down"></i></a>
+    </section>
+
+    <section class="stats">
+        <div class="stat reveal">
+            <i class="fa-solid fa-hourglass-half"></i>
+            <h3 class="counter" data-target="6000">0</h3>
+            <p>Yillik tarix</p>
+        </div>
+        <div class="stat reveal">
+            <i class="fa-solid fa-lock"></i>
+            <h3 class="counter" data-target="150">0</h3>
+            <p>Qulf turlari</p>
+        </div>
+        <div class="stat reveal">
+            <i class="fa-solid fa-earth-asia"></i>
+            <h3 class="counter" data-target="195">0</h3>
+            <p>Davlatlarda</p>
+        </div>
+        <div class="stat reveal">
+            <i class="fa-solid fa-users"></i>
+            <h3 class="counter" data-target="8000">0</h3>
+            <p>Million foydalanuvchi</p>
+        </div>
+    </section>
+
+    <section class="section about" id="haqida">
+        <div class="about-img reveal-left">
+            <img src="https://images.openai.com/static-rsc-4/GBGGh9xnkYwPNk2N_cIjZR4EeGJk1sHBlgv9493Rj4sJiRXdo07eZiFCG1kPK2EvT6FtCanZ6SjuxkMvjSI-n05H1sMjzcP9xa0MH9eCGiBmvY0I-q1wYW-w0gJwAUsuZkBn5bNUXKK_Psc2ecMRHVnUALv4Td4mnvovkIUkKcKRvuaDMpKpz4tAvwDjMpem?purpose=fullsize" alt="Kalit haqida">
+            <div class="about-label"><i class="fa-solid fa-shield-halved"></i> Xavfsizlik ramzi</div>
+        </div>
+        <div class="about-text reveal-right">
+            <span class="subtitle">Biz haqimizda</span>
+            <h2>Kalit — bu shunchaki metall emas</h2>
+            <p>Kalit insoniyatning eng qadimiy ixtirolaridan biri. U uyimizni, mulkimizni va sirlarimizni himoya qiladi. Har bir kalit o'z egasining ishonchini saqlaydi.</p>
+            <ul class="about-list">
+                <li><i class="fa-solid fa-circle-check"></i> Mustahkam va ishonchli himoya</li>
+                <li><i class="fa-solid fa-circle-check"></i> Ming yillik tarix va madaniyat</li>
+                <li><i class="fa-solid fa-circle-check"></i> Zamonaviy raqamli texnologiyalar</li>
+                <li><i class="fa-solid fa-circle-check"></i> Har bir uy uchun zarur buyum</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section dark" id="tarix">
+        <span class="subtitle center reveal">Vaqt yo'li</span>
+        <h2 class="title reveal">Kalit tarixi</h2>
+        <div class="timeline">
+            <div class="timeline-item reveal-left">
+                <div class="timeline-icon"><i class="fa-solid fa-tree"></i></div>
+                <div class="timeline-content">
+                    <span class="year">Miloddan avvalgi 4000</span>
+                    <h3>Yog'och kalitlar</h3>
+                    <p>Qadimgi Misr va Bobilda birinchi yog'och qulf va kalitlar yaratilgan.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal-right">
+                <div class="timeline-icon"><i class="fa-solid fa-hammer"></i></div>
+                <div class="timeline-content">
+                    <span class="year">I asr</span>
+                    <h3>Metall kalitlar</h3>
+                    <p>Rimliklar temir va bronzadan mustahkam, uzukka o'xshash kalitlar yasashgan.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal-left">
+                <div class="timeline-icon"><i class="fa-solid fa-chess-rook"></i></div>
+                <div class="timeline-content">
+                    <span class="year">O'rta asrlar</span>
+                    <h3>Qal'a kalitlari</h3>
+                    <p>Katta va bezakli kalitlar shahar darvozalari va qal'alarni qo'riqlagan.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal-right">
+                <div class="timeline-icon"><i class="fa-solid fa-gears"></i></div>
+                <div class="timeline-content">
+                    <span class="year">XIX asr</span>
+                    <h3>Silindrli qulflar</h3>
+                    <p>Linus Yel bugungi kunda ham ishlatiladigan silindrli qulfni ixtiro qildi.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal-left">
+                <div class="timeline-icon"><i class="fa-solid fa-microchip"></i></div>
+                <div class="timeline-content">
+                    <span class="year">Bugun</span>
+                    <h3>Raqamli kalitlar</h3>
+                    <p>Kartalar, barmoq izi, yuz tanish va telefon orqali eshiklar ochiladi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="galereya">
+        <span class="subtitle center reveal">Rasmlar</span>
+        <h2 class="title reveal">Galereya</h2>
+        <div class="filters reveal">
+            <button class="filter active" data-filter="all"><i class="fa-solid fa-border-all"></i> Hammasi</button>
+            <button class="filter" data-filter="old"><i class="fa-solid fa-landmark"></i> Qadimiy</button>
+            <button class="filter" data-filter="new"><i class="fa-solid fa-bolt"></i> Zamonaviy</button>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item reveal" data-type="old">
+                <img src="https://images.openai.com/static-rsc-4/j49j-1fmP0EwPPYO9zHYd5FB5pwxFecDIQ1NeLgDFnwMA1w12EBPHykgxjFPtlRauxSgujJzJq2_ihVvOtZaxwT74FIr9YS9URo0yswN79oBhzStruaO2EQJGABVvr-ulTQ9UHTOd188u0XwfRV1l590uZBU5bfv91-SYxkyvob4_Ukp6ueeF9em9_fCeOrd?purpose=fullsize" alt="Oltin kalit">
+                <div class="gallery-text">
+                    <i class="fa-solid fa-gem"></i>
+                    <h3>Oltin kalit</h3>
+                    <p>Hashamat va boylik ramzi</p>
+                </div>
+            </div>
+            <div class="gallery-item reveal" data-type="new">
+                <img src="https://images.openai.com/static-rsc-4/mfnkWe1z_f6pEkzFmIqOC8TyVmHijlbcvHZ-x9KX4haZfBLAHVZKHTmBtbiYffMkSP3SpXCRQQb-LTIT1NjDW6ykxBjdM4GTil9T8oDB_Ogz1Phj2Vx9CAMCzfArar9dAy6kMhlj26bo00ksYO8RyIzxlw9NXlCJDauNtN-42f4?purpose=inline" alt="Mashina kaliti">
+                <div class="gallery-text">
+                    <i class="fa-solid fa-car"></i>
+                    <h3>Mashina kaliti</h3>
+                    <p>Zamonaviy texnologiya</p>
+                </div>
+            </div>
+            <div class="gallery-item reveal" data-type="old">
+                <img src="https://images.openai.com/static-rsc-4/WfvO3Fi_Xo1KfbG9D_CgamDymq-MRq_qDYoXLe6X66_rERWDzVVvxtK-IVpvm4D5oGNTVmT-jKE8_yVUNUIVOaCCL9sf1M55qbfyDZoO1_hOlf4tM9ldypGkWIL965zr4rFlR-weBIjy7Wa0do3wJc91RrK_3gNy2Z1DZITu8eyc5FvqLoRY_67RHDIdPqVx?purpose=fullsize" alt="Qadimiy kalitlar">
+                <div class="gallery-text">
+                    <i class="fa-solid fa-dungeon"></i>
+                    <h3>Qadimiy kalitlar</h3>
+                    <p>Asrlar sirini saqlagan</p>
+                </div>
+            </div>
+            <div class="gallery-item reveal" data-type="new">
+                <img src="https://images.openai.com/static-rsc-4/TMzYxzxV4hmAFrrVOCAKf9LVIBnQ-bsv84PeiKU6t38wor-JEHs9X9m07bk1QkS25G5IjHSCqeJeDg_3gXrAQBpsZV90xLUasMBkUE4wAmoP6gIKWr82MFhBQAYeCnGAwA-9hizdVV1UWY_hrlMJfajxAJIFyz87tRD96LR-qXC3JDNoQ0Bho0rhxH40RgQY?purpose=fullsize" alt="Raqamli kalit">
+                <div class="gallery-text">
+                    <i class="fa-solid fa-wifi"></i>
+                    <h3>Raqamli kalit</h3>
+                    <p>Kelajak shu yerda</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose"><i class="fa-solid fa-xmark"></i></button>
+        <img src="" alt="Katta rasm" id="lightboxImg">
+    </div>
+
+    <section class="section dark" id="turlar">
+        <span class="subtitle center reveal">Tanlang</span>
+        <h2 class="title reveal">Kalit turlari</h2>
+        <div class="types">
+            <div class="type-card reveal">
+                <div class="icon"><i class="fa-solid fa-house-lock"></i></div>
+                <h3>Uy kaliti</h3>
+                <p>Har kuni ishlatiladigan eng oddiy va zarur kalit.</p>
+            </div>
+            <div class="type-card reveal">
+                <div class="icon"><i class="fa-solid fa-car-side"></i></div>
+                <h3>Avto kalit</h3>
+                <p>Masofadan boshqariladigan aqlli kalitlar.</p>
+            </div>
+            <div class="type-card reveal">
+                <div class="icon"><i class="fa-solid fa-id-card"></i></div>
+                <h3>Karta kalit</h3>
+                <p>Mehmonxona va ofislarda keng tarqalgan.</p>
+            </div>
+            <div class="type-card reveal">
+                <div class="icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                <h3>Smart kalit</h3>
+                <p>Telefon orqali eshikni ochish imkoniyati.</p>
+            </div>
+            <div class="type-card reveal">
+                <div class="icon"><i class="fa-solid fa-fingerprint"></i></div>
+                <h3>Barmoq izi</h3>
+                <p>Sizning barmog'ingiz — eng xavfsiz kalit.</p>
+            </div>
+            <div class="type-card reveal">
+                <div class="icon"><i class="fa-solid fa-vault"></i></div>
+                <h3>Seyf kaliti</h3>
+                <p>Eng qimmatli narsalarni himoya qiladi.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner">
+        <img src="images/key3.jpg" alt="Banner">
+        <div class="banner-overlay"></div>
+        <div class="banner-text reveal">
+            <i class="fa-solid fa-quote-left quote-icon"></i>
+            <h2 id="quote">Bilim — har qanday eshikni ochuvchi kalit.</h2>
+            <button class="btn" id="quoteBtn"><i class="fa-solid fa-arrows-rotate"></i> Keyingi hikmat</button>
+        </div>
+    </section>
+
+    <section class="section" id="fikrlar">
+        <span class="subtitle center reveal">Mijozlar</span>
+        <h2 class="title reveal">Fikrlar</h2>
+        <div class="reviews">
+            <div class="review reveal">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>"Kalitlar tarixi haqida bunchalik qiziqarli ma'lumotni birinchi marta o'qidim!"</p>
+                <div class="author"><i class="fa-solid fa-circle-user"></i> Aziz Karimov</div>
+            </div>
+            <div class="review reveal">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>"Sayt juda chiroyli, rasmlar va animatsiyalar ajoyib chiqqan."</p>
+                <div class="author"><i class="fa-solid fa-circle-user"></i> Malika Usmonova</div>
+            </div>
+            <div class="review reveal">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+                <p>"Smart kalitlar haqida bilib, uyimga ham o'rnatishga qaror qildim."</p>
+                <div class="author"><i class="fa-solid fa-circle-user"></i> Jasur Toshmatov</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section dark" id="savollar">
+        <span class="subtitle center reveal">Yordam</span>
+        <h2 class="title reveal">Ko'p beriladigan savollar</h2>
+        <div class="faq">
+            <div class="faq-item reveal">
+                <button class="faq-question">Birinchi kalit qachon yaratilgan? <i class="fa-solid fa-plus"></i></button>
+                <div class="faq-answer"><p>Taxminan 6000 yil oldin Qadimgi Misr va Mesopotamiyada yog'ochdan yasalgan.</p></div>
+            </div>
+            <div class="faq-item reveal">
+                <button class="faq-question">Eng xavfsiz kalit qaysi? <i class="fa-solid fa-plus"></i></button>
+                <div class="faq-answer"><p>Biometrik kalitlar — barmoq izi va yuz tanish eng xavfsiz hisoblanadi.</p></div>
+            </div>
+            <div class="faq-item reveal">
+                <button class="faq-question">Kalitni yo'qotsam nima qilaman? <i class="fa-solid fa-plus"></i></button>
+                <div class="faq-answer"><p>Usta chaqirib qulfni almashtirish yoki zaxira kalitdan foydalanish kerak.</p></div>
+            </div>
+            <div class="faq-item reveal">
+                <button class="faq-question">Smart kalit qanday ishlaydi? <i class="fa-solid fa-plus"></i></button>
+                <div class="faq-answer"><p>Telefon Bluetooth yoki internet orqali qulfga maxsus kod yuboradi.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="aloqa">
+        <span class="subtitle center reveal">Yozing</span>
+        <h2 class="title reveal">Aloqa</h2>
+        <div class="contact">
+            <div class="contact-info reveal-left">
+                <div class="info"><i class="fa-solid fa-location-dot"></i><div><h4>Manzil</h4><p>Toshkent, O'zbekiston</p></div></div>
+                <div class="info"><i class="fa-solid fa-phone"></i><div><h4>Telefon</h4><p>+998 90 123 45 67</p></div></div>
+                <div class="info"><i class="fa-solid fa-envelope"></i><div><h4>Email</h4><p>info@kalitolami.uz</p></div></div>
+                <div class="info"><i class="fa-solid fa-clock"></i><div><h4>Ish vaqti</h4><p>Du–Sha, 9:00 – 18:00</p></div></div>
+            </div>
+            <form class="form reveal-right" id="form">
+                <div class="input-box"><i class="fa-solid fa-user"></i><input type="text" placeholder="Ismingiz" required></div>
+                <div class="input-box"><i class="fa-solid fa-at"></i><input type="email" placeholder="Email" required></div>
+                <div class="input-box"><i class="fa-solid fa-message"></i><textarea rows="5" placeholder="Xabaringiz" required></textarea></div>
+                <button type="submit" class="btn" id="sendBtn"><i class="fa-solid fa-paper-plane"></i> <span id="sendLabel">Yuborish</span></button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="#hero" class="logo"><i class="fa-solid fa-key"></i> Kalit Olami</a>
+                <p>Kalitlar tarixi, turlari va kelajagi haqida eng chiroyli sayt.</p>
+                <div class="socials">
+                    <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Sahifalar</h4>
+                <a href="#haqida"><i class="fa-solid fa-angle-right"></i> Haqida</a>
+                <a href="#tarix"><i class="fa-solid fa-angle-right"></i> Tarix</a>
+                <a href="#galereya"><i class="fa-solid fa-angle-right"></i> Galereya</a>
+                <a href="#turlar"><i class="fa-solid fa-angle-right"></i> Turlar</a>
+            </div>
+            <div class="footer-col">
+                <h4>Yordam</h4>
+                <a href="#savollar"><i class="fa-solid fa-angle-right"></i> Savollar</a>
+                <a href="#fikrlar"><i class="fa-solid fa-angle-right"></i> Fikrlar</a>
+                <a href="#aloqa"><i class="fa-solid fa-angle-right"></i> Aloqa</a>
+            </div>
+            <div class="footer-col">
+                <h4>Yangiliklar</h4>
+                <p>Yangi maqolalardan xabardor bo'ling.</p>
+                <form class="subscribe" id="subscribe">
+                    <input type="email" placeholder="Email" required>
+                    <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Kalit Olami. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </footer>
+
+    <button class="to-top" id="toTop"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
